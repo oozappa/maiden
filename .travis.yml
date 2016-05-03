@@ -20,4 +20,5 @@ install:
 
 script:
     - tox
-
+    - coverage run --source=maiden setup.py test
+    - coverage report -m
