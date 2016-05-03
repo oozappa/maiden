@@ -22,3 +22,6 @@ script:
     - tox
     - coverage run --source=maiden setup.py test
     - coverage report -m
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
